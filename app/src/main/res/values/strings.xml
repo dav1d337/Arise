@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Arise</string>
+    <string name="action_settings">Settings</string>
+    <string name="alarm_notification_channel_id">alarmchannel</string>
+    <string name="notification_title">Alarma!!</string>
+    <string name="snooze">Snooze</string>
+</resources>

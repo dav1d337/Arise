@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
+import androidx.core.app.NotificationManagerCompat
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.arise.Alarm
@@ -40,6 +41,7 @@ class MainFragment : BaseFragment<MainViewModel>() {
         })
 
         floatingActionButton.setOnClickListener {
+
             val dialog = Dialog(context!!)
             dialog.setTitle("Create Alarm")
             dialog.setContentView(R.layout.create_alarm_dialog)

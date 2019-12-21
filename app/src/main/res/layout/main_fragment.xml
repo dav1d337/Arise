@@ -17,34 +17,40 @@
             android:layout_height="wrap_content"
             android:theme="@style/AppTheme.AppBarOverlay">
 
-
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:popupTheme="@style/AppTheme.PopupOverlay">
 
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:layout_collapseMode="pin">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="6dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_check_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/app_name"
+                        android:typeface="monospace"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
             </androidx.appcompat.widget.Toolbar>
-
-            <com.google.android.material.appbar.CollapsingToolbarLayout
-                android:id="@+id/collapseToolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:contentScrim="?attr/colorPrimary"
-                app:expandedTitleGravity="top"
-                app:expandedTitleMarginTop="80dp"
-                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap|enterAlways"
-                app:toolbarId="@+id/toolbar">
-
-            </com.google.android.material.appbar.CollapsingToolbarLayout>
-
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tablayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_collapseMode="pin"
-                app:tabGravity="fill"
-                app:tabMode="fixed" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
